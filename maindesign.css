@@ -1,0 +1,395 @@
+body{
+  width:1080px;
+  height:1700px;
+  font-family: 'Malgun Gothic';
+  line-height: 1.6
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul.tabs{
+  margin-bottom: 30px;
+  padding: 0px;
+  list-style: none;
+  font-weight: bold;
+}
+ul.tabs li{
+  background: none;
+  width: 21%;
+  color: #505050;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size:24px;
+  text-align: center;
+  outline-style: auto;
+  outline-color: #f0975a;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+ul.tabs li.current{
+  background: #f0975a;
+  color: #fff;
+}
+
+.tab-content{
+  display: none;
+  background: #ededed;
+  padding: 15px;
+  height: 900px;
+  overflow-y: auto;
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+
+ul.products {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.products li{
+  background: none;
+  width: 30%;
+  color: #555;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul.products img {
+	outline-style: solid;
+}
+
+ul.products img:active {
+	box-shadow: 3px 3px 10px;
+}
+/* ul.products li.current{
+  background: #adadad;
+  color: #555;
+} */
+
+.bottom-button {
+	display:flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+/* CSS */
+.button-7 {
+  background-color: #e98c4d;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.15385;
+  margin-right: 20px;
+  outline: solid #e98c4d;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+
+}
+
+.button-6 {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #505050;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.15385;
+  margin-right: 20px;
+  outline: solid #e98c4d;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+
+}
+
+.order-box {
+	display:flex;
+	height: 300px;
+	margin-top:15px;
+	font-size:18px;
+}
+
+#order-table {
+	width:70%;
+	height: fit-content;
+	margin-right:20px;
+}
+
+#order-total {
+	width:30%;
+	height: fit-content;
+}
+
+th {
+	height:60px;
+}
+
+td.order-td {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.plus-minus {
+	width:20%;
+}
+
+.plus-minus:active {
+	box-shadow: 1px 1px 5px;
+}
+
+#total_cost {
+	text-align:center;
+}
+
+.table-button {
+	text-align: center;
+}
+
+.table-button-img:active {
+	box-shadow: 1px 1px 5px;
+}
+
+/******************* order CSS *******************/
+
+ul.ord_tabs{
+  margin-bottom: 30px;
+  padding: 0px;
+  list-style: none;
+  font-weight: bold;
+}
+
+ul.ord_tabs li{
+  background: none;
+  width: 21%;
+  color: #505050;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size:24px;
+  text-align: center;
+  outline-style: auto;
+  outline-color: #f0975a;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+ul.ord_tabs li.current{
+  background: #f0975a;
+  color: #fff;
+}
+
+/* 포장, 매장 버튼 */
+.takeout_yn {
+	margin:0 auto;
+	width:95%;
+	
+	text-align:center;
+	padding:20px;
+	margin-bottom:30px;
+}
+
+.takeout_yn .takeout_y, .takeout_n {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #505050;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.15385;
+    margin-right: 20px;
+    outline: solid #e98c4d;
+    padding: 8px 0.8em;
+    position: relative;
+    text-align: center;
+    width: 180px;
+}
+
+
+/* 주문내역 */
+.order_list {
+	width:90%;
+	margin:0 auto;
+	border: 1px solid #e3e3e3;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 1px 1px 3px;
+}
+
+.order_list .prd_name {
+	
+	width:89%; margin-bottom:10px; display:inline-block; font-size:32px; font-weight:bold;
+	padding:0 0 10px 10px;
+}
+
+.order_list .prd_sub {
+	display:inline-block;
+	width:12%;
+	font-size:20px;
+	padding-left:10px;
+	margin-bottom:5px;
+} 
+
+
+.order_list .prd_detail {
+	
+	display:inline-block;
+	width:84%;
+	font-size:20px;
+	margin-bottom:5px;
+} 
+
+.prd_del img{
+	width:50px;
+	hight:50px;
+	text-align:center;
+}
+
+.detail_amt img{
+	width:70px;
+	hight:70px;
+	text-align:center;
+}
+
+.detail_amt, .prd_money {
+	display:inline-block;
+	width: 40%;
+	font-size:24px;
+	margin-left:10px;
+}
+
+.total_money {
+	margin:0 auto;
+	text-align:center;
+	font-size:42px;
+	font-weight:bold ;
+	margin:40px 0 30px 0;
+}
+
+
+/* 주문취소, 결제하기 버튼 */
+
+.order_yn {
+	margin:0 auto;
+	width:95%;
+	
+	text-align:center;
+	padding:20px;
+	margin-bottom:30px;
+}
+
+.order_yn .order_y, .order_n {
+  background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #505050;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.15385;
+    margin-right: 20px;
+    outline: solid #e98c4d;
+    padding: 8px 0.8em;
+    position: relative;
+    text-align: center;
+    width: 220px;
+}
+
+
+/* 2단계 결제수단 선택*/
+
+.ord_option {
+	margin:0 auto;
+	width:95%;
+	
+    height: 70%;
+	
+	text-align:center;
+	padding:20px;
+	margin-top:90px;
+	
+}
+.ord_option .ord_card, .ord_coupon {
+  	    background: rgb(240, 151, 90);
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #505050;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.15385;
+    margin-right: 20px;
+    outline: solid #e98c4d;
+    padding: 8px 0.8em;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 700px;
+}
+
+ .ord_card p, .ord_coupon  p {
+	padding-top:120px;
+}
+
+/* 뒤로가기 이미지*/
+.bt_back{
+	margin:0 auto;
+	text-align:center;
+}
+
+.bt_back img {
+	width:300px;
+	height:120px;
+	
+}
+
+.tab_description {
+	margin: 0 auto;
+	text-align:center;
+	width:95%
+}
+
+.tab_description p {
+	text-align:center;
+	font-size:50px;
+}
+
+.order-content {
+  background: white;
+  padding: 15px;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.order-container {
+	height:100%;
+	width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,48 @@
+#dialog-option {
+	font-size:24px;
+}
+
+/* .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+	width: 900px !important;	
+} */
+
+ul.drinks, ul.sides {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+
+li.li-drink, li.li-side {
+    margin: 3px 6px;
+}
+
+li.selected img {
+    outline: orange !important;
+    outline-style: auto !important;
+}
+
+#dialog-option li img {
+	outline: gray;
+    outline-style: auto;
+	width:200px;
+	margin:3px 6px;
+}
+
+#tomato, #lettuce, #onion, #cheese {
+	display: flex;
+    align-items: center;
+}
+
+#div-ing img{
+	width:50px;
+	margin: 15px;
+}
+
+#dialog-option li img:active, #div-ing img:active {
+	box-shadow: 1px 1px 5px;
+}
+
+.ing-title {
+	width:130px;
+}
